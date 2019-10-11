@@ -62,26 +62,21 @@ Table log_event:
 #### clustering key: creation_date_utc DESC, uuid DESC
 
 The above configuration selected in order to improve the following queries:
-Query 1 (For a specific day check an application for errors):
-----------------------
+# Query 1 (For a specific day check an application for errors):
 SELECT * FROM log_event where date_id=20191011 and app_name='OpenJDK 64-Bit S - 1237' and log_level = 'ERROR';
 
-Query 2 (For some days check an application for fatal):
-----------------------
+# Query 2 (For some days check an application for fatal):
 SELECT * FROM log_event where date_id in (20191009, 20191011, 20191012) and app_name='OpenJDK 64-Bit S - 1237' and log_level = 'FATAL';
 
-Query 3 (For a specific day check an application for errors between 3 minutes):
-----------------------
+# Query 3 (For a specific day check an application for errors between 3 minutes):
 SELECT * FROM log_event where date_id=20191011 and app_name='OpenJDK 64-Bit S - 1237' and log_level = 'ERROR'
 	and creation_date_utc >= ' 2019-10-11 11:49:44' and creation_date_utc <= ' 2019-10-11 11:52:44';
 
-Query 4 (For a specific day check some applications for errors or warnings):
-----------------------
+# Query 4 (For a specific day check some applications for errors or warnings):
 SELECT * FROM log_event where date_id=20191011 and app_name in ('OpenJDK 64-Bit S - 1237', 'OpenJDK 64-Bit S - 1239')
 	and log_level in ('ERROR', 'WARN'); 
  
-Query 5 (Last 10 errors for a specific day and application):
-----------------------
+# Query 5 (Last 10 errors for a specific day and application):
 SELECT * FROM log_event where date_id=20191011 and app_name in ('OpenJDK 64-Bit S - 1232')  and log_level in ('ERROR') limit 10;
 
 The following are the results of the 5th query and I think this it is very important to support this kind of queries in order to allow 
