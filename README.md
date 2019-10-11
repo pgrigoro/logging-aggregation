@@ -82,7 +82,7 @@ SELECT * FROM log_event where date_id=20191011 and app_name in ('OpenJDK 64-Bit 
 SELECT * FROM log_event where date_id=20191011 and app_name in ('OpenJDK 64-Bit S - 1232')  and log_level in ('ERROR') limit 10;
 
 The following are the results of the 5th query and I think this it is very important to support this kind of queries in order to allow 
-the monitoring live monitoring of applications for errors:
+the live monitoring of applications for errors:
 
 | date_id  | app_name                | log_level | creation_date_utc               | uuid                                 | host_ip    | message                                         | user_name | version|
 |----------|-------------------------|-----------|---------------------------------|--------------------------------------|------------|-------------------------------------------------|-----------|--------|
