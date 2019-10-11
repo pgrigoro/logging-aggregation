@@ -84,18 +84,18 @@ SELECT * FROM log_event where date_id=20191011 and app_name in ('OpenJDK 64-Bit 
 The following are the results of the 5th query and I think this it is very important to support this kind of queries in order to allow 
 the monitoring live monitoring of applications for errors:
 
- date_id  | app_name                | log_level | creation_date_utc               | uuid                                 | host_ip    | message                                         | user_name | version
-----------+-------------------------+-----------+---------------------------------+--------------------------------------+------------+-------------------------------------------------+-----------+---------
- 20191011 | OpenJDK 64-Bit S - 1232 |     ERROR | 2019-10-11 13:50:36.053000+0000 | 4da8b773-e647-452f-8d87-ea3c6a95f964 | 127.0.1.18 |     mobGdPDOSsaCICYq2ESYOSRjYrjL6VYqIrDVe1j4Dil |  pgrigoro |       1
- 20191011 | OpenJDK 64-Bit S - 1232 |     ERROR | 2019-10-11 13:49:11.053000+0000 | 2213cf23-d787-4874-aef5-edee656ba398 | 127.0.1.18 |     RfQ8cHN7fSuwHSeCmUYSk5pbhvQbK2zgkcbTnyAwSTj |  pgrigoro |       1
- 20191011 | OpenJDK 64-Bit S - 1232 |     ERROR | 2019-10-11 13:32:08.686000+0000 | b2028510-4285-4fc5-863d-d8a2ffe1606d | 127.0.1.11 |                   JN7UT7pdWZWp2X440dKarIWP0pFHz |  pgrigoro |       1
- 20191011 | OpenJDK 64-Bit S - 1232 |     ERROR | 2019-10-11 13:31:53.689000+0000 | 9164fa2a-c97f-4228-a12f-ceec423d818f | 127.0.1.18 | yVPHjLq4SPiwtxzd5IKWpL40vkELMPwmO2VZo7IP1RrP9D9 |  pgrigoro |       1
- 20191011 | OpenJDK 64-Bit S - 1232 |     ERROR | 2019-10-11 13:31:33.687000+0000 | 903afc8a-3eba-47ad-bd96-5fc9ec293670 | 127.0.1.15 |                            KpoxP1OvxZgqPc2YTGoJ |  pgrigoro |       1
- 20191011 | OpenJDK 64-Bit S - 1232 |     ERROR | 2019-10-11 13:31:09.687000+0000 | 168859dd-dd1c-447e-a3e4-c33d21f0813c | 127.0.1.16 |                          Ugues3bjpYvsm3A5rhwBFb |  pgrigoro |       1
- 20191011 | OpenJDK 64-Bit S - 1232 |     ERROR | 2019-10-11 12:59:28.354000+0000 | 67a08fbf-c5b4-4cd6-a5f5-73df4d4ff91b | 127.0.1.18 |                          7rjXrEHItLJt54xbCKZs1w |  pgrigoro |       1
- 20191011 | OpenJDK 64-Bit S - 1232 |     ERROR | 2019-10-11 12:58:56.354000+0000 | 4c904be0-838b-4fc9-a7e1-78361fac3721 | 127.0.1.11 |                      UMdp2NkHTYsRHh6xPl9aB7t6wo |  pgrigoro |       1
- 20191011 | OpenJDK 64-Bit S - 1232 |     ERROR | 2019-10-11 12:58:06.355000+0000 | acad1d70-0f03-4fb1-8b02-0d54f105aa93 | 127.0.1.17 |                          5S2kk0ynrcqIxa4S1pYOuv |  pgrigoro |       1
- 20191011 | OpenJDK 64-Bit S - 1232 |     ERROR | 2019-10-11 12:57:35.355000+0000 | 434e6383-81c5-4ce6-80a2-48a92ddfc58f | 127.0.1.14 |                         VFXhLRzKRWGjn8Ht82ZOaok |  pgrigoro |       1
+| date_id  | app_name                | log_level | creation_date_utc               | uuid                                 | host_ip    | message                                         | user_name | version|
+|----------|-------------------------|-----------|---------------------------------|--------------------------------------|------------|-------------------------------------------------|-----------|--------|
+| 20191011 | OpenJDK 64-Bit S - 1232 |     ERROR | 2019-10-11 13:50:36.053000+0000 | 4da8b773-e647-452f-8d87-ea3c6a95f964 | 127.0.1.18 |     mobGdPDOSsaCICYq2ESYOSRjYrjL6VYqIrDVe1j4Dil |  pgrigoro |       1|
+| 20191011 | OpenJDK 64-Bit S - 1232 |     ERROR | 2019-10-11 13:49:11.053000+0000 | 2213cf23-d787-4874-aef5-edee656ba398 | 127.0.1.18 |     RfQ8cHN7fSuwHSeCmUYSk5pbhvQbK2zgkcbTnyAwSTj |  pgrigoro |       1|
+| 20191011 | OpenJDK 64-Bit S - 1232 |     ERROR | 2019-10-11 13:32:08.686000+0000 | b2028510-4285-4fc5-863d-d8a2ffe1606d | 127.0.1.11 |                   JN7UT7pdWZWp2X440dKarIWP0pFHz |  pgrigoro |       1|
+| 20191011 | OpenJDK 64-Bit S - 1232 |     ERROR | 2019-10-11 13:31:53.689000+0000 | 9164fa2a-c97f-4228-a12f-ceec423d818f | 127.0.1.18 | yVPHjLq4SPiwtxzd5IKWpL40vkELMPwmO2VZo7IP1RrP9D9 |  pgrigoro |       1|
+| 20191011 | OpenJDK 64-Bit S - 1232 |     ERROR | 2019-10-11 13:31:33.687000+0000 | 903afc8a-3eba-47ad-bd96-5fc9ec293670 | 127.0.1.15 |                            KpoxP1OvxZgqPc2YTGoJ |  pgrigoro |       1|
+| 20191011 | OpenJDK 64-Bit S - 1232 |     ERROR | 2019-10-11 13:31:09.687000+0000 | 168859dd-dd1c-447e-a3e4-c33d21f0813c | 127.0.1.16 |                          Ugues3bjpYvsm3A5rhwBFb |  pgrigoro |       1|
+| 20191011 | OpenJDK 64-Bit S - 1232 |     ERROR | 2019-10-11 12:59:28.354000+0000 | 67a08fbf-c5b4-4cd6-a5f5-73df4d4ff91b | 127.0.1.18 |                          7rjXrEHItLJt54xbCKZs1w |  pgrigoro |       1|
+| 20191011 | OpenJDK 64-Bit S - 1232 |     ERROR | 2019-10-11 12:58:56.354000+0000 | 4c904be0-838b-4fc9-a7e1-78361fac3721 | 127.0.1.11 |                      UMdp2NkHTYsRHh6xPl9aB7t6wo |  pgrigoro |       1|
+| 20191011 | OpenJDK 64-Bit S - 1232 |     ERROR | 2019-10-11 12:58:06.355000+0000 | acad1d70-0f03-4fb1-8b02-0d54f105aa93 | 127.0.1.17 |                          5S2kk0ynrcqIxa4S1pYOuv |  pgrigoro |       1|
+| 20191011 | OpenJDK 64-Bit S - 1232 |     ERROR | 2019-10-11 12:57:35.355000+0000 | 434e6383-81c5-4ce6-80a2-48a92ddfc58f | 127.0.1.14 |                         VFXhLRzKRWGjn8Ht82ZOaok |  pgrigoro |       1|
 
 Software Versions
 ----------------------
