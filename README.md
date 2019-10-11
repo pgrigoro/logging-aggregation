@@ -44,6 +44,7 @@ Implementation Details
 Database Design
 ----------------------
 Table log_event:
+
 |Column		   |Type      |Description								  |
 |------------------|----------|---------------------------------------------------------------------------|
 |date_id           |INT	      |First member of the partitioned key that represents a date (e.g. 20191011) |
