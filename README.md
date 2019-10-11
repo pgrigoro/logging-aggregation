@@ -44,15 +44,17 @@ Implementation Details
 Database Design
 ----------------------
 Table log_event:
-date_id           :Type INT. First member of the partitioned key that represents a date (e.g. 20191011)          
-log_level         :Type TEXT. The log level (e.g. TRACE, DEBUG, INFO, WARN, ERROR, FATAL)     
-host_ip           :Type TEXT. The IP address in the host where the event was generated.     
-app_name          :Type TEXT. The client application name where the event was generated.
-uuid              :Type TEXT. The event uuid.
-user_name         :Type TEXT. The the user related to the generated event.
-creation_date_utc :Type TIMESTAMP. The UTC time of the event (e.g. 2019-10-11 13:50:24.054000+0000)
-message           :Type TEXT. The event message.
-version           :Type INT. The event version.
+|Column		   |Type      |Description								  |
+|------------------|----------|---------------------------------------------------------------------------|
+|date_id           |INT	      |First member of the partitioned key that represents a date (e.g. 20191011) |
+|log_level         |TEXT      |The log level (e.g. TRACE, DEBUG, INFO, WARN, ERROR, FATAL)                |
+|host_ip           |TEXT      |The IP address in the host where the event was generated.                  |
+|app_name          |TEXT      |The client application name where the event was generated.                 |
+|uuid              |TEXT      |The event uuid.							          |
+|user_name         |TEXT      |The the user related to the generated event.			          |
+|creation_date_utc |TIMESTAMP |The UTC time of the event (e.g. 2019-10-11 13:50:24.054000+0000)           |
+|message           |TEXT      |The event message.							  |
+|version           |INT       |The event version.							  |
 
 Primary key: date_id, app_name, log_level, creation_date_utc, uuid
 Partition key: date_id, app_name, log_level
