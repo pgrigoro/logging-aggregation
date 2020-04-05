@@ -33,7 +33,7 @@
         <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
         <maven-thrift-plugin.version>0.1.11</maven-thrift-plugin.version>
         <maven-thrift.version>0.1.11</maven-thrift.version>
-        <metrics-jmx.version>4.0.2</metrics-jmx.version>
+        <metrics-jmx.version>4.1.5</metrics-jmx.version>
         <org.slf4j.slf4j-simple.version>1.7.12</org.slf4j.slf4j-simple.version>
         <project.version>1.0-SNAPSHOT</project.version>
         <spring-boot-maven-plugin.version>2.0.1.RELEASE</spring-boot-maven-plugin.version>
