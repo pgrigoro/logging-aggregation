@@ -25,7 +25,7 @@
 
     <properties>
         <build-helper-maven-plugin.version>3.0.0</build-helper-maven-plugin.version>
-        <cassandra-driver-extras.version>3.5.0</cassandra-driver-extras.version>
+        <cassandra-driver-extras.version>3.8.0</cassandra-driver-extras.version>
         <commons-lang3.version>3.9</commons-lang3.version>
         <henicea.version>1.1.2</henicea.version>
         <jackson-annotations.version>2.9.9</jackson-annotations.version>
