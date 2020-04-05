@@ -28,7 +28,7 @@
         <cassandra-driver-extras.version>3.5.0</cassandra-driver-extras.version>
         <commons-lang3.version>3.9</commons-lang3.version>
         <henicea.version>1.1.2</henicea.version>
-        <jackson-annotations.version>2.9.9</jackson-annotations.version>
+        <jackson-annotations.version>2.10.3</jackson-annotations.version>
         <kafka_2.12.version>2.3.0</kafka_2.12.version>
         <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
         <maven-thrift-plugin.version>0.1.11</maven-thrift-plugin.version>
