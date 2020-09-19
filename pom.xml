@@ -37,12 +37,12 @@
         <org.slf4j.slf4j-simple.version>1.7.12</org.slf4j.slf4j-simple.version>
         <project.version>1.0-SNAPSHOT</project.version>
         <spring-boot-maven-plugin.version>2.0.1.RELEASE</spring-boot-maven-plugin.version>
-        <spring-boot-starter-web.version>2.0.1.RELEASE</spring-boot-starter-web.version>
+        <spring-boot-starter-web.version>2.1.17.RELEASE</spring-boot-starter-web.version>
         <spring-test.version>5.1.9.RELEASE</spring-test.version>
         <thrift-common.version>1.0-SNAPSHOT</thrift-common.version>
         <thrift.version>0.12.0</thrift.version>
         <types.version>1.0-SNAPSHOT</types.version>
-        <jackson-databind.version>2.9.9</jackson-databind.version>
+        <jackson-databind.version>2.9.10.6</jackson-databind.version>
     </properties>
 
     <dependencyManagement>
