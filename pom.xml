@@ -42,7 +42,7 @@
         <thrift-common.version>1.0-SNAPSHOT</thrift-common.version>
         <thrift.version>0.12.0</thrift.version>
         <types.version>1.0-SNAPSHOT</types.version>
-        <jackson-databind.version>2.9.9</jackson-databind.version>
+        <jackson-databind.version>2.9.10.7</jackson-databind.version>
     </properties>
 
     <dependencyManagement>
